@@ -4,13 +4,11 @@ public class trapping_rain_water {
     public static void main(String[] args) {
 
         int[] arr = {0,1,0,2,1,0,1,3,2,1,2,1};
-        Trapping(arr);
-        for(int i=0; i<arr.length;i++ ){
-            System.out.print(arr[i]+" ");
-        }
+        System.out.print(Trapping(arr));
+        
         
     }
-    public static void Trapping(int [] arr) {
+    public static int Trapping(int [] arr) {
         int n = arr.length;
         int[] left = new int[n];
         int [] right = new int [n];
