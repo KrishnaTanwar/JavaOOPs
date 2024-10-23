@@ -3,24 +3,24 @@ import java.util.Scanner;
 public class input_and_print {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         // Reading dimensions of the array
-        int n = sc.nextInt(); // number of rows
+        i+nt n = sc.nextInt(); // number of rows
         int m = sc.nextInt(); // number of columns
-        
+
         // Initializing the array
         int[][] arr = new int[n][m];
-        
+
         // Reading elements into the array
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) { // Use arr[i].length to get the correct column size
                 arr[i][j] = sc.nextInt();
             }
         }
-        
+
         // Calling the display method to print the array
         Display(arr);
-        
+
         // Closing the scanner
         sc.close();
     }
